@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div id="question-container" class="question-container">
+            <h2 id="question">Question Text</h2>
+            <ul id="choices" class="choices">
+                <li><input type="radio" name="answer" id="choice1" class="choice"><label for="choice1" id="choice1-text"></label></li>
+                <li><input type="radio" name="answer" id="choice2" class="choice"><label for="choice2" id="choice2-text"></label></li>
+                <li><input type="radio" name="answer" id="choice3" class="choice"><label for="choice3" id="choice3-text"></label></li>
+                <li><input type="radio" name="answer" id="choice4" class="choice"><label for="choice4" id="choice4-text"></label></li>
+            </ul>
+        </div>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn" style="display:none;">Submit Quiz</button>
+        <div id="result-container" class="result-container">
+            <h3 id="result">Your score is: 0</h3>
+            <h4 id="answers-summary">Correct and Participant Answers:</h4>
+            <ul id="answers-list"></ul>
+            <button id="restart-btn" style="display:none;">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

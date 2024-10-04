@@ -1,0 +1,132 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f96b16, #2f80ed);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz container styles */
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.quiz-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Question styles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Choices styles */
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+
+.choices li {
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Button styles */
+button {
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #56ccf2;
+    transform: scale(1.05);
+}
+
+/* Submit and Next button visibility */
+#submit-btn {
+    display: none;
+}
+
+/* Result container styles */
+.result-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 22px;
+    color: #2f80ed;
+    margin-bottom: 15px;
+}
+
+#answers-summary {
+    font-size: 18px;
+    color: #333;
+}
+
+#answers-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+#answers-list li {
+    background-color: #f7f9fc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.correct {
+    background-color: #e1f5e1;
+    border-left: 5px solid #2ecc71;
+}
+
+.incorrect {
+    background-color: #fdecea;
+    border-left: 5px solid #e74c3c;
+}
+
+button#restart-btn {
+    margin-top: 20px;
+    background-color: #27ae60;
+}
+
+button#restart-btn:hover {
+    background-color: #2ecc71;
+}
